@@ -8,6 +8,12 @@ Micro frontend login component to be used with the main [container](https://gith
 yarn start:dev
 ```
 
+## Notes
+
+- Uses gotrue-js for auth
+- Uses react-helmet to inject html headers, such as css cdn links. This keeps the micro-front-end self contained.
+- Uses react-bootstrap and the bootstrap cdn.
+
 ## How was this app started?
 
 ```bash
