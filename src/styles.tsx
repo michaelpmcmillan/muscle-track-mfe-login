@@ -15,15 +15,6 @@ export const FORM_GROUP = styled(FormGroup)`
   flex-direction: column;
 `;
 
-export const SEPARATOR = styled.div`
-  width: 80%;
-  height: 2px;
-  background-color: #6c757d;
-  opacity: 0.2;
-  margin: 1rem;
-  align-self: center;
-`;
-
 export const BUTTON = styled(Button)`
   margin-top: 0.5rem;
 `;
