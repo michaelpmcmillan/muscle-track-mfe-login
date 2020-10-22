@@ -1,24 +1,9 @@
 import React from "react";
-import GoTrue from "gotrue-js";
 import Form from "react-bootstrap/Form";
 import Helmet from "react-helmet";
 import { Formik } from "formik";
 import { FORM, BUTTON, FORM_GROUP } from "./styles";
-
-const auth = new GoTrue({
-  APIUrl: "https://muscle-track.netlify.app/.netlify/identity",
-  audience: "",
-  setCookie: true,
-});
-
-const login = async (email, password) => {
-  await auth
-    .login(email, password, true)
-    .then((response) => (window.location.href = "/profile"))
-    .catch((error) => {
-      // display error message
-    });
-};
+import { login } from "./plugin/identity";
 
 export default function Root(props) {
   return (
